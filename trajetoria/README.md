@@ -5,7 +5,7 @@
 > Conheça também a trajetória do [Ewerton](https://eportella.github.io/trajetoria/)
 
 - Fui constituida em 24/06/2016 por [Ewerton da Silva Portella](https://github.com/eportella).
-- Meu 1º ano foi na [Envision Tecnologia](https://www.envisiontecnologia.com.br/) onde conheci o setor de turismo, como fui contratado com um scopo específico esse desafio durou 8 meses;
+- Meu 1º ano foi na [Envision Tecnologia](https://www.envisiontecnologia.com.br/) onde conheci o setor de turismo, como fui contratada com um scopo específico esse desafio durou 8 meses;
 - Ainda no 1º ano fui indicada pela própria [Envision Tecnologia](https://www.envisiontecnologia.com.br/) para atuar na [Trade Tours](https://tradetours.com.br/) e [Trade Tech](https://tradetech.com.br/). Lá além de sustentar os sistemas já existentes contribui ativamente e principalmente até os meus 4º ano no desenvolvimento dos produtos;
     - [Reservecar](https://reservecar.com.br/)
     - [Seus Ingressos](https://seusingressos.com.br/)
