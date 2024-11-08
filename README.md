@@ -2,8 +2,8 @@
 
 >[!TIP] Conheça o [Ewerton](https://eportella.github.io/).
 
-- Conheça a minha [trajetória](trajetoria/README.md).\
-- Tenho uma [missão](missao/README.md), [visão](visao/README.md) e [valores](valor/README.md) bem definidos, e sou regida pela minha compreensão abstraída do [*Scrum*](scrum/README.md), acreditando que ele está em coerência com o [Manifesto ágil](agile-manifesto/README.md).\
+- Conheça a minha [trajetória](trajetoria/README.md).
+- Tenho uma [missão](missao/README.md), [visão](visao/README.md) e [valores](valor/README.md) bem definidos, e sou regida pela minha compreensão abstraída do [*Scrum*](scrum/README.md), acreditando que ele está em coerência com o [Manifesto ágil](agile-manifesto/README.md).
 - Organizo meus artefatos principalmente com três “tecnologias”:
     1. [*Domain Driven Design*](domain-driven-design/README.md);
     1. [*Feature Folder*](feature-folder/README.md);
