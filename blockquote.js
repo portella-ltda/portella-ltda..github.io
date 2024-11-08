@@ -5,7 +5,9 @@
         params.p.style.columnGap = '0.4em'
         params.p.style.fontWeight = '500'
         params.p.style.color = params.highlight.color
-        params.p.prepend(params.highlight.name + ' ')
+        params.p.textContent = params.p.textContent.replace(oarams.key, '')
+        params.p.prependchild('<span>' + params.highlight.name + '</span>')
+        params.p.prepend = params.highlight.key
 
     }
     document.querySelectorAll('blockquote').forEach(blockquote => {
@@ -15,6 +17,7 @@
 
         if (p.textContent.startsWith('[!NOTE]')) {
             const highlight = {
+                key: '[!NOTE]',
                 color: '#1f6feb',
                 name: 'Note',
             }
@@ -27,6 +30,7 @@
         }
         if (p.textContent.startsWith('[!TIP]')) {
             const highlight = {
+                key: '[!TIP]',
                 color: '#3fb950',
                 name: 'Tip',
             }
@@ -39,6 +43,7 @@
         }
         if (p.textContent.startsWith('[!IMPORTANT]')) {
             const highlight = {
+                key: '[!IMPORTANT]',
                 color: '#ab7df8',
                 name: 'Important',
             }
@@ -51,6 +56,7 @@
         }
         if (p.textContent.startsWith('[!WARNING]')) {
             const highlight = {
+                key: '[!WARNING]',
                 color: '#d29922',
                 name: 'Warning',
             }
@@ -63,6 +69,7 @@
         }
         if (p.textContent.startsWith('[!CAUTION]')) {
             const highlight = {
+                key: '[!CAUTION]',
                 color: '#f85149',
                 name: 'Caution',
             }
