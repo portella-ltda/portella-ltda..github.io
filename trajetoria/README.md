@@ -1,6 +1,7 @@
 ## Minha trajetória
 
 >[!TIP]
+>
 > Conheça também a trajetória do [Ewerton](https://eportella.github.io/trajetoria/)
 
 - Fui constituida em 24/06/2016 por [Ewerton da Silva Portella](https://github.com/eportella).
