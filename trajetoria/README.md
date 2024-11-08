@@ -19,7 +19,7 @@
 
 >[!TIP]
 >
-> Minha trajetória está em constrante contrução. Sempre que tver algo novo para contar, tão breve deixaei disponível.
+> Minha trajetória está em constrante construção. Sempre que tiver algo novo para contar, tão breve deixarei disponível.
 
 Uma tragetória de <span id="idade-total">`idade total`</span> anos sendo <span id="idade-contato">`idade contato`</span> desde o primeiro contato, <span id="idade-profissional-experiencia">`idade profissional experiência`</span> de experiência profissional sendo <span id="idade-ti-experiencia">`idade ti experiência`</span> específico em tecnologia.
 
