@@ -7,7 +7,7 @@ Organizo meus artefatos principalmente com três “tecnologias”:
 1. [*Feature Folder*](feature-folder/README.md);
 1. [*Feature Toggles*](feature-toggles/README.md),
 
-Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) desta apresentação. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
+Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) aqui. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
 
 >[!NOTE]
 >
