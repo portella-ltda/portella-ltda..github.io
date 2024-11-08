@@ -4,9 +4,9 @@
         params.p.style.alignItems = 'center'
         params.p.style.columnGap = '0.4em'
         params.p.style.fontWeight = '500'
-        params.p.style.color = params.highlight.color
         params.p.textContent = params.p.textContent.replace(params.highlight.key, '')
         const span = document.createElement('span')
+        span.style.color = params.highlight.color
         span.textContent = params.highlight.name;
         params.p.prepend(span)
         params.p.prepend(params.highlight.key)
