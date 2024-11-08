@@ -39,6 +39,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
       - name: Display dotnet version
         run: dotnet --version
+      - name: donet build
+        run: dotnet build
 
   # Deployment job
   deploy:
