@@ -21,7 +21,7 @@
         params.contato.textContent = contato
     if (params.experiencia)
         params.experiencia.textContent = profissionalExperiencia
-    if (params.ewerton)
+    if (params.tiExperiencia)
         params.tiExperiencia.textContent = tiExperiencia
 
 })({
