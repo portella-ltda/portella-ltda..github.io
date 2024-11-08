@@ -6,8 +6,8 @@
         params.p.style.fontWeight = '500'
         params.p.style.color = params.highlight.color
         params.p.textContent = params.p.textContent.replace(params.key, '')
-        params.p.prependchild('<span>' + params.highlight.name + '</span>')
-        params.p.prepend = params.highlight.key
+        params.p.prepend('<span>' + params.highlight.name + '</span>')
+        params.p.prepend(params.highlight.key)
 
     }
     document.querySelectorAll('blockquote').forEach(blockquote => {
