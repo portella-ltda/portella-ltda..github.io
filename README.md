@@ -23,3 +23,4 @@ Muito prazer!\
 
 
 <script src="blockquote.js"></script>
+<script src="highlight.js"></script>
