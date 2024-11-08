@@ -5,8 +5,10 @@
         params.p.style.columnGap = '0.4em'
         params.p.style.fontWeight = '500'
         params.p.style.color = params.highlight.color
-        params.p.textContent = params.p.textContent.replace(params.key, '')
-        params.p.prepend('<span>' + params.highlight.name + '</span>')
+        params.p.textContent = params.p.textContent.replace(params.highlight.key, '')
+        const span = document.createElement('span')
+        span.textContent = params.highlight.name;
+        params.p.prepend(span)
         params.p.prepend(params.highlight.key)
 
     }
