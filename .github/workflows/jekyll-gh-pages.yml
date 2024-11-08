@@ -37,6 +37,12 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      - name: Setup .NET 6.x
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.x'
+      - name: Display dotnet version
+        run: dotnet --version
 
   # Deployment job
   deploy:
