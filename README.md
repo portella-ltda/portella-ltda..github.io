@@ -1,6 +1,6 @@
 # Seja bem vindo!
 
->[!TIP] Conheça o [Ewerton](https://eportella.github.io/).
+>[!TIP] Conheça o [Ewerton](https://eportella.github.io/)
 
 - Conheça a minha [trajetória](trajetoria/README.md).
 - Tenho uma [missão](missao/README.md), [visão](visao/README.md) e [valores](valor/README.md) bem definidos, e sou regida pela minha compreensão abstraída do [*Scrum*](scrum/README.md), acreditando que ele está em coerência com o [Manifesto ágil](agile-manifesto/README.md).
