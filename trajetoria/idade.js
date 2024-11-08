@@ -11,13 +11,18 @@
     const contato = calculate('1995-06-28')
     const profissionalExperiencia = calculate('2001-01-01')
     const tiExperiencia = calculate('2012-01-01')
-
-    params.ewerton.textContent = ewerton
-    params.portella.textContent = portella
-    params.total.textContent = ewerton;
-    params.contato.textContent = contato;
-    params.experiencia.textContent = profissionalExperiencia;
-    params.tiExperiencia.textContent = tiExperiencia;
+    if (params.ewerton)
+        params.ewerton.textContent = ewerton
+    if (params.portella)
+        params.portella.textContent = portella
+    if (params.total)
+        params.total.textContent = ewerton
+    if (params.contato)
+        params.contato.textContent = contato
+    if (params.experiencia)
+        params.experiencia.textContent = profissionalExperiencia
+    if (params.ewerton)
+        params.tiExperiencia.textContent = tiExperiencia
 
 })({
     ewerton: document.getElementById('ewerton-idade'),
