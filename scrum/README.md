@@ -53,3 +53,4 @@ Artefato não lida com o material produzido do que se **aplica** mas sim com o m
 >Aprenda, execute e compartilhe com comprometimento, foco, disponibilidade, respeito e coragem sem esquecer que precisa estar sempre se adaptando, se inspecionando e sendo transparente. Faça isso sendo regido por cerimônia e use ferramenta que produza material de borda para conseguir lidar com ela. **A aplicação**
 
 <script src="../blockquote.js"></script>
+<script src="../highlight.js"></script>

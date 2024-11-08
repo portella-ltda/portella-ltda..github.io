@@ -25,3 +25,4 @@ Uma tragetória de <span id="idade-total">`idade total`</span> anos sendo <span 
 
 <script src="./idade.js"></script>
 <script src="../blockquote.js"></script>
+<script src="../highlight.js"></script>
