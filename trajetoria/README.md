@@ -1,7 +1,7 @@
 ## Minha trajetória
 
 >[!TIP]
-> Conheça também a trajetória do [Ewerton](https://github.com/eportella/trajetoria)
+> Conheça também a trajetória do [Ewerton](https://eportella.github.io/trajetoria/)
 
 - Fui constituida em 24/06/2016 por [Ewerton da Silva Portella](https://github.com/eportella).
 - Meu 1º ano foi na [Envision Tecnologia](https://www.envisiontecnologia.com.br/) onde conheci o setor de turismo, como fui contratado com um scopo específico esse desafio durou 8 meses;
