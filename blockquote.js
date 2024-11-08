@@ -13,7 +13,7 @@
         if (!p)
             return;
 
-        if (p.textContent === '[!NOTE]') {
+        if (p.textContent.startsWith('[!NOTE]')) {
             const highlight = {
                 color: '#1f6feb',
                 name: 'Note',
@@ -25,7 +25,7 @@
             })
             return;
         }
-        if (p.textContent === '[!TIP]') {
+        if (p.textContent.startsWith('[!TIP]')) {
             const highlight = {
                 color: '#3fb950',
                 name: 'Tip',
@@ -37,7 +37,7 @@
             })
             return
         }
-        if (p.textContent === '[!IMPORTANT]') {
+        if (p.textContent.startsWith('[!IMPORTANT]')) {
             const highlight = {
                 color: '#ab7df8',
                 name: 'Important',
@@ -49,7 +49,7 @@
             })
             return
         }
-        if (p.textContent === '[!WARNING]') {
+        if (p.textContent.startsWith('[!WARNING]')) {
             const highlight = {
                 color: '#d29922',
                 name: 'Warning',
@@ -61,7 +61,7 @@
             })
             return
         }
-        if (p.textContent === '[!CAUTION]') {
+        if (p.textContent.startsWith('[!CAUTION]')) {
             const highlight = {
                 color: '#f85149',
                 name: 'Caution',
