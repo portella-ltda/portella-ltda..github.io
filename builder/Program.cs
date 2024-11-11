@@ -3,7 +3,11 @@ using System.Xml.Linq;
 
 var dir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
-foreach (var file in dir!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+var dirJekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).GetDirectories("_jekyll")[0];
+var s = dir.CreateSubdirectory("_site");
+File.Copy(dirJekyll.FullName, s.FullName);
+
+foreach (var file in dir!.GetFiles("*_site/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
     string? content;
     using var fileStrem = file.OpenRead();
@@ -11,11 +15,8 @@ foreach (var file in dir!.GetFiles("*.html", new EnumerationOptions() { RecurseS
     content = BlockquoteFormatter.Format(fileStrem);
     content = SvgFormatter.Format(content);
 
-    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
-    
-    if(!sf.Directory!.Exists)
-        sf.Directory.Create();
-        
+    var sf = new FileInfo(file.FullName);
+
     using var writer = sf.CreateText();
     writer.Write(content);
 
