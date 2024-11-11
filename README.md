@@ -22,5 +22,5 @@ Muito prazer!\
 [^1]: Exceto o *Feature Toggles* por se tratar de um site com natureza estática.
 
 
-<script src="blockquote.js"></script>
-<script src="highlight.js"></script>
+<!-- <script src="blockquote.js"></script>
+<script src="highlight.js"></script> -->

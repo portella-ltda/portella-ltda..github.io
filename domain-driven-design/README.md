@@ -20,5 +20,5 @@
 
 [Referência](https://www.domainlanguage.com/ddd/)
 
-<script src="../blockquote.js"></script>
-<script src="../highlight.js"></script>
+<!-- <script src="../blockquote.js"></script>
+<script src="../highlight.js"></script> -->
