@@ -8,8 +8,8 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     Console.WriteLine(file.FullName);
     using var fileStrem = file.OpenRead();
     var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
-    content = SvgFormatter.ContentFormat(content);
     Console.WriteLine(content);
+    content = SvgFormatter.ContentFormat(content);
 }
 
 
@@ -27,11 +27,11 @@ static class BlockquoteFormatter
 
         foreach (var blockquote in blockquotes)
         {
-            //Console.WriteLine( $"blockquote -> {blockquote.InnerText.Trim()}");
             var p = blockquote.SelectSingleNode("p");
             if (p == null)
                 continue;
 
+            Console.WriteLine( $"p ->{p.InnerText.Trim()}");
             if (p.InnerText.Trim().StartsWith("[!NOTE]"))
             {
                 var highlight = new Highlight
