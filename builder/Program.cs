@@ -14,7 +14,7 @@ foreach (var file in dir?.GetFiles("*.html", new EnumerationOptions() { RecurseS
     content = BlockquoteFormatter.Format(fileStrem);
     content = SvgFormatter.Format(content);
 
-    var sf = new FileInfo(file.FullName.Replace("/.jekyll/", "/_site/"));
+    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
     using var writer = sf.CreateText();
     writer.Write(content);
 
