@@ -7,23 +7,36 @@ var Jekyll = @base!.GetDirectories("_jekyll")[0];
 var site = @base.CreateSubdirectory("_site");
 Console.WriteLine(Jekyll.FullName);
 Console.WriteLine(site.FullName);
-File.Copy(Jekyll.FullName, site.FullName);
 
-foreach (var file in @base!.GetFiles("*_site/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+foreach (var file in @base!.GetFiles("*_jekyll/*.*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
-    string? content;
+    
+    using var fileStrem = file.OpenText();
+
+    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
+
+    using var writer = sf.OpenWrite();
+    writer.CopyTo(fileStrem.BaseStream);
+
+    Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
+}
+
+
+foreach (var file in @base!.GetFiles("*_jekyll/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+{
     using var fileStrem = file.OpenRead();
 
-    content = BlockquoteFormatter.Format(fileStrem);
+    var content = BlockquoteFormatter.Format(fileStrem);
     content = SvgFormatter.Format(content);
 
-    var sf = new FileInfo(file.FullName);
+    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
 
     using var writer = sf.CreateText();
     writer.Write(content);
 
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
 }
+
 
 
 static class BlockquoteFormatter
