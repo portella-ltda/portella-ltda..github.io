@@ -28,20 +28,11 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Checkout with portella
-      #  uses: portella-ltda/github-pages@main
-      #- name: Upload artifact
-        uses: actions/checkout@v4
-        with:
-          repository: portella-ltda/github-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: repo-alvo
       - name: Build with portella
         run: |
-          ls
-          cd repo-alvo
+          cd builder
           dotnet build
-          dotnet run -- "$INPUT_MESSAGE"
+          dotnet run
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
