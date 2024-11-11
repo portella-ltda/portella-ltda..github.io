@@ -1,8 +1,6 @@
 ## Minha trajetória
 
->[!TIP]
->
-> Conheça também a trajetória do [Ewerton](https://eportella.github.io/trajetoria/)
+>[!TIP] Conheça também a trajetória do [Ewerton](https://eportella.github.io/trajetoria/)
 
 - Fui constituida em 24/06/2016 por [Ewerton](https://github.com/eportella).
 - Meu 1º ano foi na [Envision Tecnologia](https://www.envisiontecnologia.com.br/) onde conheci o setor de turismo, como fui contratada com um scopo específico esse desafio durou 8 meses;
@@ -20,8 +18,6 @@
 >[!TIP]
 >
 > Minha trajetória está em constrante construção. Sempre que tiver algo novo para contar, tão breve deixarei disponível.
-
-Uma tragetória de <span id="idade-total">`idade total`</span> anos sendo <span id="idade-contato">`idade contato`</span> desde o primeiro contato, <span id="idade-profissional-experiencia">`idade profissional experiência`</span> de experiência profissional sendo <span id="idade-ti-experiencia">`idade ti experiência`</span> específico em tecnologia.
 
 <script src="./idade.js"></script>
 <script src="../blockquote.js"></script>
