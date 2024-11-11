@@ -8,7 +8,7 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     Console.WriteLine(file.FullName);
     using var fileStrem = file.OpenRead();
     var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
-    Console.WriteLine(content);
+    //Console.WriteLine(content);
     content = SvgFormatter.ContentFormat(content);
 }
 
@@ -33,7 +33,6 @@ static class BlockquoteFormatter
 
             if (p.InnerText.Trim().StartsWith("[!NOTE]"))
             {
-                Console.WriteLine( $"p ->{p.InnerText.Trim()}");
                 var highlight = new Highlight
                 {
                     Key = "[!NOTE]",
@@ -41,7 +40,6 @@ static class BlockquoteFormatter
                     Name = "Note"
                 };
                 blockquote.SetAttributeValue("style", $"border-color: {highlight.Color};");
-                Console.WriteLine(string.Join("|", blockquote.Attributes));
                 Format(p, highlight);
                 continue;
             }
@@ -100,6 +98,7 @@ static class BlockquoteFormatter
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
+        Console.WriteLine($"BEFORE: {p.InnerHtml}");
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
@@ -109,6 +108,8 @@ static class BlockquoteFormatter
             p.PrependChild(span);
             p.PrependChild(HtmlNode.CreateNode($"<span>{highlight.Key}</span>"));
         }
+
+        Console.WriteLine($"AFTER: {p.InnerHtml}");
     }
 }
 
