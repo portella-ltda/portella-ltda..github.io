@@ -9,7 +9,7 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     using var fileStrem = file.OpenRead();
     var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
     content = SvgFormatter.ContentFormat(content);
-    Console.WriteLine(content);
+    //Console.WriteLine(content);
 }
 
 
@@ -27,7 +27,7 @@ static class BlockquoteFormatter
 
         foreach (var blockquote in blockquotes)
         {
-            Console.WriteLine( $"blockquote -> {blockquote.InnerText}");
+            Console.WriteLine( $"blockquote -> {blockquote.InnerText.Trim()}");
             var p = blockquote.SelectSingleNode("p");
             if (p == null)
                 continue;
