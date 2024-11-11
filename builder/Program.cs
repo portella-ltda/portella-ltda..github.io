@@ -5,6 +5,8 @@ var @base = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
 var Jekyll = @base!.GetDirectories("_jekyll")[0];
 var site = @base.CreateSubdirectory("_site");
+Console.WriteLine(Jekyll.FullName);
+Console.WriteLine(site.FullName);
 File.Copy(Jekyll.FullName, site.FullName);
 
 foreach (var file in @base!.GetFiles("*_site/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
