@@ -1,13 +1,13 @@
 ﻿using HtmlAgilityPack;
 using System.Xml.Linq;
 
-var dir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
+var @base = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
-var dirJekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).GetDirectories("_jekyll")[0];
-var s = dir.CreateSubdirectory("_site");
-File.Copy(dirJekyll.FullName, s.FullName);
+var Jekyll = @base!.GetDirectories("_jekyll")[0];
+var site = @base.CreateSubdirectory("_site");
+File.Copy(Jekyll.FullName, site.FullName);
 
-foreach (var file in dir!.GetFiles("*_site/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+foreach (var file in @base!.GetFiles("*_site/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
     string? content;
     using var fileStrem = file.OpenRead();
