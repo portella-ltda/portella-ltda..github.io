@@ -5,8 +5,6 @@ var @base = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
 var Jekyll = @base!.GetDirectories("_jekyll")[0];
 var site = @base.CreateSubdirectory("_site");
-Console.WriteLine(Jekyll.FullName);
-Console.WriteLine(site.FullName);
 
 foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
@@ -129,6 +127,10 @@ static class BlockquoteFormatter
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
+        p.SetAttributeValue("display", "flex");
+        p.SetAttributeValue("alignItems", "center");
+        p.SetAttributeValue("columnGap", "0.4em");
+        p.SetAttributeValue("fontWeight", "500");
 
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
