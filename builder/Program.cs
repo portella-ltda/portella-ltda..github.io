@@ -4,7 +4,7 @@ using System.Xml.Linq;
 var @base = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
 var Jekyll = @base!.GetDirectories("_jekyll")[0];
-var site = @base.CreateSubdirectory("_site");
+_ = @base.CreateSubdirectory("_site");
 
 foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
