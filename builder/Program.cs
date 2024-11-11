@@ -5,16 +5,22 @@ var dir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
 foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }) ?? [])
 {
-    using var fileStrem = file.OpenRead();
-    var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
-    content = SvgFormatter.ContentFormat(content);
+    string? content;
+    using (var fileStrem = file.OpenRead())
+    {
+        content = BlockquoteFormatter.Format(fileStrem);
+        content = SvgFormatter.Format(content);
+    }
+    file.Delete();
+    file.Refresh();
+    
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
 }
 
 
 static class BlockquoteFormatter
 {
-    public static string? FormatBlockquotes(FileStream stream)
+    public static string? Format(FileStream stream)
     {
         var htmlDocument = new HtmlDocument();
         htmlDocument.Load(stream);
@@ -97,7 +103,7 @@ static class BlockquoteFormatter
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
-        
+
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
@@ -119,7 +125,7 @@ public class Highlight
 
 static class SvgFormatter
 {
-    internal static string? ContentFormat(string? content)
+    internal static string? Format(string? content)
     {
         if (content == default)
             return default;
