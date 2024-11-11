@@ -9,7 +9,7 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     using var fileStrem = file.OpenRead();
     var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
     content = SvgFormatter.ContentFormat(content);
-    //Console.WriteLine(content);
+    Console.WriteLine(content);
 }
 
 
@@ -27,12 +27,12 @@ static class BlockquoteFormatter
 
         foreach (var blockquote in blockquotes)
         {
-            Console.WriteLine( $"blockquote -> {blockquote.InnerText.Trim()}");
+            //Console.WriteLine( $"blockquote -> {blockquote.InnerText.Trim()}");
             var p = blockquote.SelectSingleNode("p");
             if (p == null)
                 continue;
 
-            if (p.InnerText.StartsWith("[!NOTE]"))
+            if (p.InnerText.Trim().StartsWith("[!NOTE]"))
             {
                 var highlight = new Highlight
                 {
@@ -44,7 +44,7 @@ static class BlockquoteFormatter
                 Format(p, highlight);
                 continue;
             }
-            if (p.InnerText.StartsWith("[!TIP]"))
+            if (p.InnerText.Trim().StartsWith("[!TIP]"))
             {
                 var highlight = new Highlight
                 {
@@ -56,7 +56,7 @@ static class BlockquoteFormatter
                 Format(p, highlight);
                 continue;
             }
-            if (p.InnerText.StartsWith("[!IMPORTANT]"))
+            if (p.InnerText.Trim().StartsWith("[!IMPORTANT]"))
             {
                 var highlight = new Highlight
                 {
@@ -68,7 +68,7 @@ static class BlockquoteFormatter
                 Format(p, highlight);
                 continue;
             }
-            if (p.InnerText.StartsWith("[!WARNING]"))
+            if (p.InnerText.Trim().StartsWith("[!WARNING]"))
             {
                 var highlight = new Highlight
                 {
@@ -80,7 +80,7 @@ static class BlockquoteFormatter
                 Format(p, highlight);
                 continue;
             }
-            if (p.InnerText.StartsWith("[!CAUTION]"))
+            if (p.InnerText.Trim().StartsWith("[!CAUTION]"))
             {
                 var highlight = new Highlight
                 {
