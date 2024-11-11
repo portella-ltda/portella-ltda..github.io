@@ -17,13 +17,13 @@ static class BlockquoteFormatter
 {
     public static string? FormatBlockquotes(FileStream stream)
     {
-        var doc = new HtmlDocument();
-        doc.Load(stream);
+        var htmlDocument = new HtmlDocument();
+        htmlDocument.Load(stream);
 
-        var blockquotes = doc.DocumentNode.SelectNodes("//blockquote");
+        var blockquotes = htmlDocument.DocumentNode.SelectNodes("//blockquote");
 
         if (blockquotes == null)
-            return default;
+            return htmlDocument.DocumentNode.OuterHtml;
 
         foreach (var blockquote in blockquotes)
         {
@@ -93,12 +93,12 @@ static class BlockquoteFormatter
             }
         }
 
-        return doc.ParsedText;
+        return htmlDocument.DocumentNode.OuterHtml;
     }
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
-        Console.WriteLine($"BEFORE: {p.InnerHtml}");
+        
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
@@ -108,8 +108,6 @@ static class BlockquoteFormatter
             p.PrependChild(span);
             p.PrependChild(HtmlNode.CreateNode($"<span>{highlight.Key}</span>"));
         }
-
-        Console.WriteLine($"AFTER: {p.InnerHtml}");
     }
 }
 
