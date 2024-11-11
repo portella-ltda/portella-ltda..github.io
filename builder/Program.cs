@@ -8,7 +8,7 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     Console.WriteLine(file.FullName);
     using var fileStrem = file.OpenRead();
     var content = BlockquoteFormatter.FormatBlockquotes(fileStrem);
-    //Console.WriteLine(content);
+    Console.WriteLine(content);
     content = SvgFormatter.ContentFormat(content);
 }
 
