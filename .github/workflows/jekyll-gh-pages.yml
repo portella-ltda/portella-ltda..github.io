@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Build with portella
+        uses: portella-ltda/github-pages.actions@v1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
