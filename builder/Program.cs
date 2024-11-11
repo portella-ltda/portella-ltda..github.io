@@ -1,19 +1,23 @@
 ﻿using HtmlAgilityPack;
 using System.Xml.Linq;
 
-var dir = new DirectoryInfo(Directory.GetCurrentDirectory());
+var dir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
 
-foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }) ?? [])
+if (dir?.EnumerateDirectories("_site")?.Any() ?? false)
+    dir.CreateSubdirectory("_site");
+
+foreach (var file in dir?.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }) ?? [])
 {
     string? content;
-    using (var fileStrem = file.OpenRead())
-    {
-        content = BlockquoteFormatter.Format(fileStrem);
-        content = SvgFormatter.Format(content);
-    }
-    file.Delete();
-    file.Refresh();
-    
+    using var fileStrem = file.OpenRead();
+
+    content = BlockquoteFormatter.Format(fileStrem);
+    content = SvgFormatter.Format(content);
+
+    var sf = new FileInfo(file.FullName.Replace("/.jekyll/", "/_site/"));
+    using var writer = sf.CreateText();
+    writer.Write(content);
+
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
 }
 
