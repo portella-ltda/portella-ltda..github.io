@@ -7,6 +7,7 @@ foreach (var file in dir.Parent?.GetFiles("*.html", new EnumerationOptions() { R
     Console.WriteLine(file.FullName);
     using var fileStrem = file.OpenText();
     var content = FormatContent(fileStrem.ReadToEnd());
+    Console.WriteLine(content);
 }
 
 static string FormatContent(string content)
