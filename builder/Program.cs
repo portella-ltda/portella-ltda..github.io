@@ -31,9 +31,9 @@ static class BlockquoteFormatter
             if (p == null)
                 continue;
 
-            Console.WriteLine( $"p ->{p.InnerText.Trim()}");
             if (p.InnerText.Trim().StartsWith("[!NOTE]"))
             {
+                Console.WriteLine( $"p ->{p.InnerText.Trim()}");
                 var highlight = new Highlight
                 {
                     Key = "[!NOTE]",
@@ -41,6 +41,7 @@ static class BlockquoteFormatter
                     Name = "Note"
                 };
                 blockquote.SetAttributeValue("style", $"border-color: {highlight.Color};");
+                Console.WriteLine(string.Join("|", blockquote.Attributes));
                 Format(p, highlight);
                 continue;
             }
