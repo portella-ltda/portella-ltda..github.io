@@ -127,11 +127,8 @@ static class BlockquoteFormatter
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
-        p.SetAttributeValue("display", "flex");
-        p.SetAttributeValue("alignItems", "center");
-        p.SetAttributeValue("columnGap", "0.4em");
-        p.SetAttributeValue("fontWeight", "500");
-
+        p.SetAttributeValue("style","display:flex; align-items:center; column-gap:0.4em; font-weight:500;");
+        
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
