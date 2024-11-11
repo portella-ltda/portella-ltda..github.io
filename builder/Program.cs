@@ -136,7 +136,7 @@ static class BlockquoteFormatter
         {
             var span = HtmlNode.CreateNode($"<span style='color:{highlight.Color};'>{highlight.Name}</span>");
             p.PrependChild(span);
-            p.PrependChild(HtmlNode.CreateNode($"<span>{highlight.Key}</span>"));
+            p.PrependChild(HtmlNode.CreateNode(highlight.Key));
         }
     }
 }
