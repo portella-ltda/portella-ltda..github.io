@@ -21,5 +21,3 @@
 > Minha trajetória está em constrante construção. Sempre que tiver algo novo para contar, tão breve deixarei disponível.
 
 <script src="./idade.js"></script>
-<!-- <script src="../blockquote.js"></script>
-<script src="../highlight.js"></script> -->
