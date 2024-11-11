@@ -31,7 +31,7 @@ jobs:
       - name: Build with portella
         run: |
           cd builder
-          dotnet build
+          dotnet build -c Release
           dotnet run
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
