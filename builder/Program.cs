@@ -8,7 +8,7 @@ var site = @base.CreateSubdirectory("_site");
 Console.WriteLine(Jekyll.FullName);
 Console.WriteLine(site.FullName);
 
-foreach (var file in @base!.GetFiles("*_jekyll/*.*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
+foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
     
     using var fileStrem = file.OpenText();
@@ -22,7 +22,7 @@ foreach (var file in @base!.GetFiles("*_jekyll/*.*.css", new EnumerationOptions(
 }
 
 
-foreach (var file in @base!.GetFiles("*_jekyll/*.*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
     using var fileStrem = file.OpenRead();
 
