@@ -1,4 +1,4 @@
 ﻿using System;
 using System.IO;
-
-Console.WriteLine(Directory.GetCurrentDirectory());
+var dir = new DirectoryInfo("/");
+Console.WriteLine(dir.Parent);
