@@ -27,6 +27,7 @@ static class BlockquoteFormatter
 
         foreach (var blockquote in blockquotes)
         {
+            Console.WriteLine( $"blockquote -> {blockquote.InnerText}");
             var p = blockquote.SelectSingleNode("p");
             if (p == null)
                 continue;
