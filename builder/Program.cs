@@ -10,12 +10,14 @@ Console.WriteLine(site.FullName);
 
 foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
-    
+
     using var fileStrem = file.OpenText();
 
-    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
+    var @new = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
 
-    using var writer = sf.OpenWrite();
+    if (!@new.Directory!.Exists)
+        @new.Directory.Create();
+    using var writer = @new.OpenWrite();
     writer.CopyTo(fileStrem.BaseStream);
 
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
@@ -29,9 +31,12 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
     var content = BlockquoteFormatter.Format(fileStrem);
     content = SvgFormatter.Format(content);
 
-    var sf = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
+    var @new = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
 
-    using var writer = sf.CreateText();
+    if (!@new.Directory!.Exists)
+        @new.Directory.Create();
+
+    using var writer = @new.CreateText();
     writer.Write(content);
 
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
