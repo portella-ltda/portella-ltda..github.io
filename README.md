@@ -1,6 +1,7 @@
 # Seja bem vindo!
 
->[!TIP] Conheça o [Ewerton](https://eportella.github.io/)
+>[!TIP]
+>Conheça o [Ewerton](https://eportella.github.io/)
 
 - Conheça a minha [trajetória](trajetoria/README.md).
 - Tenho uma [missão](missao/README.md), [visão](visao/README.md) e [valores](valor/README.md) bem definidos, e sou regida pela minha compreensão abstraída do [*Scrum*](scrum/README.md), acreditando que ele está em coerência com o [Manifesto ágil](agile-manifesto/README.md).
@@ -12,7 +13,6 @@
 Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) aqui. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
 
 >[!NOTE]
->
 > Tenho uma semântica bem peculiar para implementar soluções. Tentarei descrever em breve.
 
 Muito prazer!\
