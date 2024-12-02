@@ -27,7 +27,7 @@ jobs:
         uses: /eportella/markdown-to-html-builder@main
         with:
           source-path: ${GITHUB_WORKSPACE}
-          target-path: ${GITHUB_WORKSPACE}/_site      
+          target-path: ${GITHUB_WORKSPACE}/_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:
