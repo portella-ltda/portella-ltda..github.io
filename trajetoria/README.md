@@ -14,7 +14,7 @@
     - Contribuir com e liderar o time Faturamento no desenvolvimento da **sustentação** e ***Upgrade*** **da plataforma de integração com o backoffice global**.
 - Próximo ao 6º ano iniciei meu relacionamento com a [Crefisa](https://www.crefisa.com.br/), onde em parceria com a [200 DEV](https://200dev.com/) sigo com um único porém grande desafio.
     - Contribuir com e liderar o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
-- Hoje estou no <span id="portella-idade">`tempo atual`</span>º ano da minha tragetória.
+- Hoje estou no `[age-calc]:2016-06-24`º ano da minha tragetória.
 
 >[!TIP]
 >
