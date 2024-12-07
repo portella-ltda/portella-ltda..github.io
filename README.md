@@ -15,8 +15,8 @@ Se tiver interesse em ver na prática, acesse o [código fonte](https://github.c
 >[!NOTE]
 > Tenho uma semântica bem peculiar para implementar soluções. Tentarei descrever em breve.
 
-Muito prazer!
-**PORTELLA-LTDA**
+Muito prazer!\
+**PORTELLA-LTDA**\
 [ewerton.portella@outlook.com](mailto:ewerton.portella@outlook.com)
 
 [^1]: Exceto o *Feature Toggles* por se tratar de um site com natureza estática.
