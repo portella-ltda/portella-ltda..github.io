@@ -13,7 +13,7 @@
 Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) aqui. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
 
 >[!IMPORTANT]
-> Tenho uma semântica bem específica para implementar soluções. Tentarei descrever em breve.
+> Tenho uma semântica específica para implementar soluções. Tentarei descrever em breve.
 
 Muito prazer!\
 **PORTELLA-LTDA**\
