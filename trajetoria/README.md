@@ -16,7 +16,7 @@
     - Contribuir com e liderar o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
 - Hoje estou no `[age-calc]:2016-06-24`º ano da minha tragetória.
 
->[!NOTE]
+>[!INFORMATION]
 >
 > Minha trajetória está em constrante construção. Sempre que tiver algo novo para contar, tão breve deixarei disponível.
 >
