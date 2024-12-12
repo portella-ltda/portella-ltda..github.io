@@ -10,10 +10,10 @@
     1. [*Feature Folder*](/feature-folder/README.md);
     1. [*Feature Toggles*](/feature-toggles/README.md),
 
-Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) aqui. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
-
->[!IMPORTANT]
-> Tenho uma semântica específica para implementar soluções. Tentarei descrever em breve.
+>[!TIP]
+> Acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) desse site. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
+>
+> Acesse também o [construtor](https://eportella.github.io/markdown-to-html-builder/) construtor desse site.
 
 Muito prazer!\
 **PORTELLA-LTDA**\
