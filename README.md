@@ -13,7 +13,7 @@
 >[!TIP]
 > Acesse o [código fonte](https://github.com/portella-ltda/portella-ltda.github.io) desse site. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
 >
-> Acesse também o [construtor](https://eportella.github.io/markdown-to-html-builder/) construtor desse site.
+> Acesse também o [construtor](https://eportella.github.io/markdown-to-html-builder/) desse site que foi implementado pelo [Ewerton](https://eportella.github.io/).
 
 Muito prazer!\
 **PORTELLA-LTDA**\
