@@ -14,8 +14,8 @@
 
 >[...]
 
-> [!NOTE]
+>[!NOTE]
 >
-> Temas além dos pilares normalmente trás detalhes que se encaixa no desenvolvimento de softwares, alguns há concordância e outros nem tanto. Porém como enxergo o DDD alem do software e da tecnologia, não serão colocados aqui.
+>Temas além dos pilares normalmente trás detalhes que se encaixa no desenvolvimento de softwares, alguns há concordância e outros nem tanto. Porém como enxergo o DDD alem do software e da tecnologia, não serão colocados aqui.
 
 [Referência](https://www.domainlanguage.com/ddd/)

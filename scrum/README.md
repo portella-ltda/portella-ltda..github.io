@@ -48,6 +48,6 @@ Evento é a cerimônia regida para o **papel** que faz uma **ação** sob o que 
 ### [Artifacts](https://scrumguides.org/scrum-guide.html#scrum-artifacts)
 Artefato não lida com o material produzido do que se **aplica** mas sim com o material produzido na borda do que se aplica. Não há interesse em lidar com o material produzido na borda do que se aplica, mas pode ser consultado [aqui](https://scrumguides.org/scrum-guide.html#scrum-artifacts)
 
->[!NOTE]
+>[!TIP]
 >
 >Aprenda, execute e compartilhe com comprometimento, foco, disponibilidade, respeito e coragem sem esquecer que precisa estar sempre se adaptando, se inspecionando e sendo transparente. Faça isso sendo regido por cerimônia e use ferramenta que produza material de borda para conseguir lidar com ela. **A aplicação**

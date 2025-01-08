@@ -1,4 +1,4 @@
-[Gpt](https://chatgpt.com/) Descreva pra mim por gentileza a definição e uso de feature foogles sem qualquer detalhe técnico ou de sowftware por gentileza?
+[Gpt](https://chatgpt.com/) Descreva pra mim por gentileza a definição e uso de feature toggles sem qualquer detalhe técnico ou menção a software por gentileza?
 
 ># Feature Toggles
 >
