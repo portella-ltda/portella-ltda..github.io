@@ -18,7 +18,7 @@
     - Sustentar os sistemas já existentes.
 
 >[!NOTE]
-> Hoje estou no `[age-calc]:2016-06-24`º ano da minha sólida e estratégica tragetória.
+> Hoje estou no `[age-calc]:2016-06-24`º ano da minha sólida e estratégica trajetória.
 
 >[!TIP]
 >
