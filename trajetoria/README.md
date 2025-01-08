@@ -17,10 +17,10 @@
 - Em 2024 passei a colaborar na [Prodata Mobility Brasil](https://www.prodatamobility.com.br/) onde conheci os bastidores técnicos da bilhetagem eletrônica e seus desafios, lá minha principal atividade foi;
     - Sustentar os sistemas já existentes.
 
->[!TIP]
->- Hoje estou no `[age-calc]:2016-06-24`º ano da minha sólida e estratégica tragetória.
-
 >[!NOTE]
+> Hoje estou no `[age-calc]:2016-06-24`º ano da minha sólida e estratégica tragetória.
+
+>[!TIP]
 >
 > Minha trajetória está em constrante construção. Sempre que tiver algo novo para contar, tão breve deixarei disponível.
 >
